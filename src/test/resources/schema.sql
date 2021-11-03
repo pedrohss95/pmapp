@@ -1,0 +1,15 @@
+CREATE SEQUENCE IF NOT EXISTS elements_seq;
+
+CREATE TABLE IF NOT EXISTS lead (
+
+lead_id BIGINT NOT NULL DEFAULT nextval('elements_seq') PRIMARY KEY,
+full_name VARCHAR(100) NOT NULL,
+category VARCHAR(100) NOT NULL,
+phone_number VARCHAR(100) NOT NULL,
+instagram VARCHAR(100) NOT NULL,
+facebook VARCHAR(100) NOT NULL,
+azprofile TEXT NOT NULL,
+email VARCHAR(100) NOT NULL,
+register_id VARCHAR(100) NOT NULL
+
+);
